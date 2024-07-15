@@ -1,0 +1,138 @@
+git-->version control system
+==>version control systems are mainly two types they are 
+*localized version control system
+*centralized version control system
+==>distributed version cotrol system
+#what is git:
+=============
+
+==>git is a distributed version control system
+==>git is a tree history storage system
+==>git is content tracking management system
+==>in simple git is a ease and speed
+
+#creating git repository:
+=========================
+==>git config --global user.name
+==>git config --global email
+==>git init  //it cretes .git file it contains all versions and configurations of the repository
+==>git status //it shows the status of repository
+==>git add . //it will track all the untracked files in current directory is is called staging
+==>git commit //to commit the changes made in the directory 
+
+#remote repository:
+===================
+
+-->create remote repository on
+	=>GitHub,bitbucket..etc
+-->clone repo to local
+	=>git clone URL
+-->local to remote integration
+	=>cd to local repo
+	=>git remote add origin [url]
+	=>git push
+	=>git pull (to fetch latest changes)
+	=>git log //it will show all the commits in the branch
+	=>git show {id}  //it shows the changes maken in the file 
+	=>git branch -a  //list all the branches
+	=>git branch -c {branch_name}  //it will create the branch
+	=>git checkout {branch_name} or git switch {branch_name} //to change the branch
+	=>git rm {files}  //it wil delete the files 
+	=>git mv {old} {new}  //to rename the file
+	=>git merge {branche}  //for merge 
+	=>git checkout {file_name}   //roll back
+	=>git restore --staged {file_name}  //it is used to rollback ofter staged
+	=>git revert HEAD  //to reverte the changes after commiting 
+	=>git reset --hard {id}  //rollback after commiting 
+#git login using ssh:
+=====================
+
+==>ssh-keygen.exe
+==>ls .ssh
+============================================================================================================================================================       
+
+-->git checkout {commit_id}   //it moves to desired version or forward or backward
+-->git log --all 		//gives all commits
+-->git checkout {branch_name} 		// for attach and change branch 
+-->git rm --cached {file_nae}   // for unstage the file 
+-->git checkout -b {branch_name}   	//creates a branch 
+-->git merge {branch_name}  		//merges the branches
+-->git remote add origin {repository_link}  	//add the repository to local git 
+-->git push -u origin main    		//to push code changes to remote origin 
+
+
+
+============================================================================================================================================================       
+
+apna-collage:(git&github)
+-------------------------
+
+#configure the GitHub:
+---------------------
+==>git config --global user.name
+==>git config --global user.email
+==>git config --list
+==>git clone <-some link-> //cloning a repository on our local machine
+==>git status //displays the state of the code
+==>git add <- file name -> //adds new or changed files in your working directory to the git staging area
+==>git commit -m "some message" //it is the record of change
+==>git push origin <branch-name> //upload local repo content to remote repo
+==>git init //initialize the git repository
+==>git remote add origin <-link->
+==>git remote -v //to verify remote
+==>git branch //to check branch
+==>git branch -M main //to rename branch
+==>git push origin main
+==>git push -u origin main
+
+
+#git branch commands:
+=====================
+==>git branch //to check branch
+==>git branch -M main //to rename branch
+==>git checkout <-branch name-> //to navigate
+==>git checkout -b <-new branch name-> //to create new branch name
+==>git branch -d <-branch name-> //to delete branch
+
+#undoing changes:
+=================
+case-1:staged changes 
+==>git reset <-file name->
+==>git reset
+case-1:commited changes(for one commit)
+==>git reset HEAD~1
+case-3:commited changes(for many commits)
+==>git reset <-commit hash->
+==>git reset --hard <-commit hash->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
