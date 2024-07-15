@@ -2,7 +2,7 @@ git-->version control system
 ==>version control systems are mainly two types they are 
 *localized version control system
 *centralized version control system
-==>distributed version cotrol system
+==>distributed version control system
 #what is git:
 =============
 
